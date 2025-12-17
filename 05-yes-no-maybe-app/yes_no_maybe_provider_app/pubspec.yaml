@@ -1,0 +1,21 @@
+name: yes_no_maybe_provider_app
+description: "A Flutter chat app demonstrating state management with Provider, HTTP requests using Dio, and dynamic UI updates from external API responses."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  dio: ^5.9.0
+  flutter:
+    sdk: flutter
+  provider: ^6.1.5+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

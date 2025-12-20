@@ -1,17 +1,24 @@
 // TokTik App - Vertical Videos App
 import 'package:flutter/material.dart';
+import 'package:toktik_app/core/data/local_video_posts.dart';
+import 'package:toktik_app/core/entities/video_post.dart';
+import 'package:toktik_app/core/models/local_video_model.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+class DiscoverProvider extends ChangeNotifier {
+  bool initialLoading = true;
+  List<VideoPost> providerVideos = [];
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+  Future<void> loadNextPage() async {
+    // await Future.delayed(const Duration(seconds: 2));
+    final List<VideoPost> newVideos = localVideoPosts
+        .map(
+          (localVideo) =>
+              LocalVideoModel.fromJson(localVideo).toVideoPostEntity(),
+        )
+        .toList();
 
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(body: Center(child: Text('Hello World!'))),
-    );
+    providerVideos.addAll(newVideos);
+    initialLoading = false;
+    notifyListeners();
   }
 }

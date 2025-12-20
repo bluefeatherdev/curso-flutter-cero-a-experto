@@ -1,17 +1,27 @@
 // TokTik App - Vertical Videos App
-import 'package:flutter/material.dart';
+import 'package:toktik_app/core/entities/video_post.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+class LocalVideoModel {
+  final String name;
+  final String videoUrl;
+  final int likes;
+  final int views;
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+  LocalVideoModel({
+    required this.name,
+    required this.videoUrl,
+    this.likes = 0,
+    this.views = 0,
+  });
 
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(body: Center(child: Text('Hello World!'))),
-    );
-  }
+  factory LocalVideoModel.fromJson(Map<String, dynamic> json) =>
+      LocalVideoModel(
+        name: json['name'] ?? 'No name',
+        videoUrl: json['videoUrl'],
+        likes: json['likes'] ?? 0,
+        views: json['views'] ?? 0,
+      );
+
+  VideoPost toVideoPostEntity() =>
+      VideoPost(caption: name, videoUrl: videoUrl, likes: likes, views: views);
 }

@@ -1,3 +1,6 @@
+# Do not upload the videos
+assets/videos/*.mp4
+
 # Miscellaneous
 *.class
 *.log

@@ -1,17 +1,13 @@
 // TokTik App - Vertical Videos App
-import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+class HumanFormats {
+  static String humanReadableNumber(double number) {
+    final formatterNumber = NumberFormat.compactCurrency(
+      decimalDigits: 0,
+      symbol: '',
+    ).format(number);
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(body: Center(child: Text('Hello World!'))),
-    );
+    return formatterNumber;
   }
 }

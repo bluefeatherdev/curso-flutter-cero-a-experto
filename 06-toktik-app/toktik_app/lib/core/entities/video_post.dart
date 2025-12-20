@@ -1,17 +1,14 @@
 // TokTik App - Vertical Videos App
-import 'package:flutter/material.dart';
+class VideoPost {
+  final String caption;
+  final String videoUrl;
+  final int likes;
+  final int views;
 
-void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(body: Center(child: Text('Hello World!'))),
-    );
-  }
+  VideoPost({
+    required this.caption,
+    required this.videoUrl,
+    this.likes = 0,
+    this.views = 0,
+  });
 }

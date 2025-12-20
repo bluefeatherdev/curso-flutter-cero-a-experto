@@ -1,17 +1,32 @@
 // TokTik App - Vertical Videos App
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+class VideoBackground extends StatelessWidget {
+  final List<Color> colors;
+  final List<double> stops;
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+  const VideoBackground({
+    super.key,
+    this.colors = const [Colors.transparent, Colors.black87],
+    this.stops = const [0.0, 1.0],
+  }) : assert(
+         colors.length == stops.length,
+         'Stops and Colors must be the same length.',
+       );
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(body: Center(child: Text('Hello World!'))),
+    return Positioned.fill(
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: colors,
+            stops: stops,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
+        ),
+      ),
     );
   }
 }

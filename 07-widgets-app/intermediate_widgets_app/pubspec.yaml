@@ -1,4 +1,4 @@
-name: basic_widgets_app
+name: intermediate_widgets_app
 description: "An advanced Flutter application demonstrating intermediate Material Design 3 patterns including interactive UI controls, progress indicators, snackbars, dialogs, animated containers, infinite scrolling with pull-to-refresh, and PageView-based onboarding tutorials using animate_do animations."
 publish_to: 'none'
 version: 0.1.0

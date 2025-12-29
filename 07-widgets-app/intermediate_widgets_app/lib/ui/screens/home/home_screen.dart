@@ -1,9 +1,9 @@
 // Flutter Widgets App - Intermediate Widgets App
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:basic_widgets_app/ui/menu/menu_items.dart';
-// import 'package:basic_widgets_app/ui/screens/buttons/buttons_screen.dart';
-// import 'package:basic_widgets_app/ui/screens/cards/cards_screen.dart';
+import 'package:intermediate_widgets_app/ui/menu/menu_items.dart';
+// import 'package:intermediate_widgets_app/ui/screens/buttons/buttons_screen.dart';
+// import 'package:intermediate_widgets_app/ui/screens/cards/cards_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String name = 'home_screen';

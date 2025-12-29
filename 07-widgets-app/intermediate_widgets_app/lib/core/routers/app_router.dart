@@ -1,6 +1,6 @@
 // Flutter Widgets App - Intermediate Widgets App
 import 'package:go_router/go_router.dart';
-import 'package:basic_widgets_app/ui/screens.dart';
+import 'package:intermediate_widgets_app/ui/screens.dart';
 
 /// GoRouter configuration
 final appRouter = GoRouter(

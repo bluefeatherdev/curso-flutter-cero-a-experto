@@ -1,7 +1,7 @@
 // Flutter Widgets App - Intermediate Widgets App
 import 'package:flutter/material.dart';
-import 'package:basic_widgets_app/core/routers/app_router.dart';
-import 'package:basic_widgets_app/ui/themes/app_theme.dart';
+import 'package:intermediate_widgets_app/core/routers/app_router.dart';
+import 'package:intermediate_widgets_app/ui/themes/app_theme.dart';
 
 void main() => runApp(const MainApp());
 

@@ -1,75 +1,128 @@
 # Intermediate Widgets App
 
-A comprehensive Flutter application demonstrating fundamental Material Design 3 widgets and navigation patterns using GoRouter. This example showcases various button types, card variations, and proper screen routing architecture.
+An advanced Flutter application extending basic widget concepts with interactive UI controls, progress indicators, snackbars, dialogs, animated containers, infinite scrolling, and onboarding tutorial screens. This example demonstrates intermediate Material Design 3 patterns with stateful widgets and dynamic user interactions.
 
 ## Structure
 
-The project follows a modular architecture separating core functionality, UI components, and theme configuration:
+The project builds upon modular architecture with enhanced screens showcasing stateful behavior and advanced widget composition:
 
-- `lib/main.dart` - Application entry point configuring `MaterialApp.router` with `GoRouter` and custom theme
+- `lib/main.dart` - Application entry point configuring `MaterialApp.router` with `GoRouter` and custom theme for intermediate widgets demonstration
 
-- `lib/core/routers/app_router.dart` - Centralized routing configuration using `go_router` package with path-based and named route definitions
+- `lib/core/routers/app_router.dart` - Extended routing configuration including progress, snackbars/dialogs, animated container, UI controls, app tutorial, and infinite scroll routes
 
 - `lib/ui/themes/app_theme.dart` - Theme configuration class implementing Material 3 design system with customizable color schemes
 
-- `lib/ui/screens.dart` - Barrel file exporting all screen widgets for simplified imports across the application
+- `lib/ui/screens.dart` - Barrel file exporting all screen widgets including new intermediate screens for simplified imports
 
-- `lib/ui/menu/menu_items.dart` - Data model defining menu structure with title, subtitle, navigation link, and icon properties
+- `lib/ui/menu/menu_items.dart` - Extended menu structure with eight navigation items covering buttons, cards, progress indicators, snackbars/dialogs, animated containers, UI controls, app tutorial, and infinite scroll
 
-- `lib/ui/screens/home/home_screen.dart` - Main navigation screen rendering `ListView` of menu items with dynamic routing
+- `lib/ui/screens/home/home_screen.dart` - Main navigation screen rendering `ListView` of menu items with dynamic routing to all available screens
 
-- `lib/ui/screens/buttons/buttons_screen.dart` - Comprehensive button showcase including `ElevatedButton`, `FilledButton`, `OutlinedButton`, `TextButton`, `IconButton`, and custom button implementations
+- `lib/ui/screens/buttons/buttons_screen.dart` - Comprehensive button showcase from basic widgets app foundation
 
-- `lib/ui/screens/cards/cards_screen.dart` - Card variations demonstrating different elevation levels, border styles, color fills, and image integration with `Stack` layout
+- `lib/ui/screens/cards/cards_screen.dart` - Card variations demonstrating elevation, borders, fills, and image integration
 
-- `lib/ui/screens/animated/animated_screen.dart` - Placeholder for future animation examples
+- `lib/ui/screens/progress/progress_screen.dart` - Progress indicator examples including indeterminate `CircularProgressIndicator` and controlled progress using `StreamBuilder` with periodic updates
 
-- `lib/ui/screens/app_tutorial/app_tutorial_screen.dart` - Placeholder for application tutorial functionality
+- `lib/ui/screens/snackbars_dialogs/snackbars_dialogs_screen.dart` - Interactive snackbar and dialog demonstrations using `ScaffoldMessenger`, custom snackbars with actions, `AboutDialog`, and `AlertDialog` with multiple action buttons
 
-- `lib/ui/screens/infinite_scroll/infinite_scroll_screen.dart` - Placeholder for infinite scrolling implementation
+- `lib/ui/screens/ui_controls/ui_controls_screen.dart` - Interactive form controls including `SwitchListTile`, `ExpansionTile` with `RadioListTile` group, and multiple `CheckboxListTile` widgets with stateful updates
 
-- `lib/ui/screens/progress/progress_screen.dart` - Placeholder for progress indicators demonstration
+- `lib/ui/screens/app_tutorial/app_tutorial_screen.dart` - Onboarding tutorial using `PageView` with image assets, custom slide widgets, progress detection, and animated navigation buttons using `animate_do` package
 
-- `lib/ui/screens/snackbar/snackbar_screen.dart` - Placeholder for snackbar notifications examples
+- `lib/ui/screens/animated/animated_screen.dart` - Dynamic animated container with randomized shape generation using `Random`, smooth transitions with `AnimatedContainer`, and `elasticOut` curve animations
 
-- `lib/ui/screens/ui_controls/ui_controls_screen.dart` - Placeholder for form controls and input widgets
+- `lib/ui/screens/infinite_scroll/infinite_scroll_screen.dart` - Infinite scrolling implementation with `ScrollController`, pull-to-refresh using `RefreshIndicator`, dynamic image loading from picsum.photos, and animated scroll positioning
+
+- `assets/images/` - Directory containing tutorial onboarding images for app tutorial screen
 
 ## Key Points
 
-The `ButtonsScreen` implements a comprehensive button gallery using `Wrap` widget for responsive layout. Each button type includes both enabled and disabled states, with icon variants demonstrating Material 3 design patterns. The `CustomButton` class showcases custom button creation using `ClipRRect`, `Material`, and `InkWell` for ripple effects.
+The `ProgressScreen` demonstrates both indeterminate and controlled progress indicators. The controlled progress uses `StreamBuilder` with `Stream.periodic` to emit progress values from 0 to 100 at regular intervals, showcasing reactive programming patterns with Flutter streams.
 
-The `CardsScreen` demonstrates four distinct card types through private widget classes. Card variations include default elevation styling, outlined borders using `RoundedRectangleBorder`, filled backgrounds with `surfaceContainerHighest` color, and image cards with `Stack` overlay positioning. Each card type maps over elevation values to show visual progression.
+The `SnackbarsDialogsScreen` implements custom snackbar functionality through `ScaffoldMessenger.of(context).showSnackBar` with configured duration, action buttons, and dismissal behavior. The `AboutDialog` demonstrates licensing information display, while `AlertDialog` showcases modal dialogs with multiple action buttons and navigation closure.
 
-The routing architecture uses `GoRouter` for declarative navigation with path-based and named routes. The `HomeScreen` demonstrates multiple navigation approaches including direct widget pushing, named routes, and `GoRouter` context extensions. The `FloatingActionButton` in `ButtonsScreen` uses `context.pop()` for backward navigation.
+The `UiControlsScreen` implements stateful form controls with `StatefulWidget` and `setState` for reactive updates. The `SwitchListTile` toggles boolean state, `ExpansionTile` contains `RadioListTile` group for single selection, and multiple `CheckboxListTile` widgets manage independent boolean states for meal preferences.
 
-The theme system implements Material 3 through `AppTheme` class with assertion-based validation. Color selection uses indexed access to predefined color list with bounds checking. The `appBarTheme` configuration disables default center alignment for consistent header styling.
+The `AppTutorialScreen` uses `PageView.builder` with `PageController` for swipeable tutorial slides. The implementation detects final page reach through `addListener` on controller and conditionally renders either Exit or Get Started buttons. The `animate_do` package provides `FadeInRight` animation for smooth button transitions.
 
-The menu system uses data-driven approach with `MenuItems` model defining navigation structure. The `_CustomListTile` widget applies theme colors to icons and handles tap events for screen transitions. The `ListView.builder` provides efficient rendering for dynamic menu generation.
+The `InfiniteScrollScreen` implements infinite scrolling through `ScrollController` listener detecting scroll position threshold. When user scrolls near bottom, `loadNextPage` method appends new images to list. The `RefreshIndicator` enables pull-to-refresh functionality, clearing and reloading the image list with simulated network delay.
+
+The `AnimatedScreen` demonstrates `AnimatedContainer` with dynamic property changes. The `Random` class generates randomized width, height, borderRadius, and color values. When `changeShape` is triggered, `AnimatedContainer` smoothly transitions between states using `elasticOut` curve over 400 milliseconds.
+
+The routing architecture extends `GoRouter` configuration with comprehensive route definitions for all intermediate screens. Each route uses path-based navigation with corresponding screen name constants for type-safe routing throughout the application.
+
+The menu system expands with eight items covering intermediate widget concepts. Each `MenuItems` entry includes descriptive title, subtitle, navigation link, and icon from Material Icons set, providing clear navigation structure for users.
 
 ## Example Workflow
 
 
-Launch the application to display `HomeScreen` with Material 3 themed app bar and scrollable menu list.
+Launch application to display `HomeScreen` with expanded menu containing eight intermediate widget examples.
 
 
-Select Buttons menu item to navigate to comprehensive button showcase screen with `FloatingActionButton` for backward navigation.
+Select Progress menu item to view indeterminate circular progress indicator and controlled progress with percentage display.
 
 
-Observe various button types including elevated, filled, outlined, text, and icon buttons in both enabled and disabled states.
+Observe `StreamBuilder` updating progress value from 0 to 100 with smooth animation transitions.
 
 
-Tap floating action button to return to home screen using `context.pop()` navigation.
+Navigate back and select Snackbars and Dialogs to explore notification patterns.
 
 
-Select Cards menu item to view four distinct card type variations with different elevation levels.
+Tap Show Snackbar button to display custom snackbar with action button and automatic dismissal.
 
 
-Scroll through card examples showing default, outlined, filled, and image-based implementations.
+Open About Dialog to view licensing information with Material 3 styling.
 
 
-Use system back button or app bar back arrow to return to home screen.
+Trigger Alert Dialog to demonstrate modal confirmation with Cancel and Accept actions.
 
 
-Navigate between screens using declarative routing system with automatic transition animations.
+Navigate to UI Controls to interact with stateful form elements.
+
+
+Toggle developer mode switch and observe state change with visual feedback.
+
+
+Expand transportation section and select radio option to demonstrate single selection behavior.
+
+
+Check multiple meal preference options to showcase independent checkbox state management.
+
+
+Navigate to App Tutorial to experience onboarding flow with image slides.
+
+
+Swipe through tutorial pages to view different onboarding content with titles and captions.
+
+
+Reach final slide to trigger Get Started button animation using `animate_do` package.
+
+
+Tap Get Started or Exit button to complete tutorial and return to home screen.
+
+
+Navigate to Infinite Scroll to experience dynamic content loading.
+
+
+Scroll down to trigger automatic loading of additional images from picsum.photos API.
+
+
+Pull down at top of list to refresh and reload images with visual loading indicator.
+
+
+Tap floating action button with animated icon to smoothly scroll to bottom of list.
+
+
+Navigate to Animated Container to interact with dynamic shape animations.
+
+
+Tap floating action button to trigger random shape generation with smooth property transitions.
+
+
+Observe width, height, border radius, and color animating simultaneously with elastic curve.
+
+
+Repeat shape changes to experience varied animation results with different random values.
 
 > Made with '\u{2665}' (♥) by Jesús Domínguez [@bluefeatherdev](https://github.com/bluefeatherdev)

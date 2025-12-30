@@ -1,0 +1,24 @@
+name: advanced_widgets_app
+description: "An advanced Flutter application demonstrating intermediate Material Design 3 patterns including interactive UI controls, progress indicators, snackbars, dialogs, animated containers, infinite scrolling with pull-to-refresh, and PageView-based onboarding tutorials using animate_do animations."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  animate_do: ^4.2.0
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^3.1.0
+  go_router: ^17.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/

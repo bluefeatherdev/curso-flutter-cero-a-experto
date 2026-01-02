@@ -41,23 +41,48 @@ class _ThemeChangerView extends ConsumerWidget {
     final int selectedColor = ref.watch(themeNotifierProvider).selectedColor;
     // final int selectedColor = ref.watch(selectedColorProvider);
 
-    return ListView.builder(
-      itemCount: colors.length,
-      itemBuilder: (context, index) {
-        final Color color = colors[index];
+    // return ListView.builder(
+    //   itemCount: colors.length,
+    //   itemBuilder: (context, index) {
+    //     final Color color = colors[index];
 
-        // return RadioListTile(
-        //   title: Text('This color', style: TextStyle(color: color)),
-        //   subtitle: Text('${color.value}'),
-        //   activeColor: color,
-        //   value: index,
-        //   groupValue: selectedColor,
-        //   onChanged: (value) {
-        //     // ref.read(selectedColorProvider.notifier).state = index;
-        //     ref.watch(themeNotifierProvider.notifier).changeColorIndex(index);
-        //   },
-        // );
+    //     return RadioListTile(
+    //       title: Text('This color', style: TextStyle(color: color)),
+    //       subtitle: Text('${color.value}'),
+    //       activeColor: color,
+    //       value: index,
+    //       groupValue: selectedColor,
+    //       onChanged: (value) {
+    //         // ref.read(selectedColorProvider.notifier).state = index;
+    //         ref.watch(themeNotifierProvider.notifier).changeColorIndex(index);
+    //       },
+    //     );
+    //   },
+    // );
+
+    return RadioGroup<int>(
+      groupValue: selectedColor,
+      onChanged: (int? value) {
+        if (value != null) {
+          // We use ref.read within callbacks for good practice
+          ref.read(themeNotifierProvider.notifier).changeColorIndex(value);
+        }
       },
+      child: ListView.builder(
+        itemCount: colors.length,
+        itemBuilder: (context, index) {
+          final Color color = colors[index];
+
+          return RadioListTile<int>(
+            title: Text('This color', style: TextStyle(color: color)),
+            subtitle: Text('${color.toARGB32()}'), // color.value is deprecated
+            activeColor: color,
+            value: index,
+            // groupValue is deprecated (handled by RadioGroup)
+            // onChanged is deprecated (handled by RadioGroup)
+          );
+        },
+      ),
     );
   }
 }

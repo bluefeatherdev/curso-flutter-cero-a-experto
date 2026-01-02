@@ -1,4 +1,5 @@
 // Flutter Widgets App - Advanced Widgets App
+import 'package:advanced_widgets_app/ui/widgets/side_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:advanced_widgets_app/ui/menu/menu_items.dart';
@@ -12,9 +13,13 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
+
     return Scaffold(
+      key: scaffoldKey,
       appBar: AppBar(title: const Text('Flutter Widgets App + Material 3')),
       body: const _HomeView(),
+      drawer: SideMenu(scaffoldKey: scaffoldKey),
     );
   }
 }

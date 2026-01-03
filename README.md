@@ -12,9 +12,37 @@ Curso de Udemy
 
 ?
 
+
 ### Flutter Installation
 
 ?
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <th>Skills</th>
+      <th>Android App</th>
+      <th>iOS App</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>I learn this</li>
+          <li>I learn that</li>
+          <li>It's awesome</li>
+        </ul>
+      </td>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/04d9915c-ded3-4b05-a41b-2938d35f46c3" width="250" alt="android_flutter_installation_01"/>
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_flutter_installation_01" /> -->
+        Not available
+      </td>
+    </tr>
+  </table>
+</div>
+
 
 ### First Steps
 

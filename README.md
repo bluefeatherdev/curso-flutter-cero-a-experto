@@ -15,7 +15,7 @@ Curso de Udemy
 
 ### Flutter Installation
 
-?
+The Flutter Demo Home Page is the default counter app included in the SDK. It shows a number on screen that increases each time the `FloatingActionButton` is pressed, demonstrating state management with `StatefulWidget`, `setState()`, and the basic use of `Scaffold`, `AppBar`, and layout widgets.
 
 <div align="center">
   <table border="0">

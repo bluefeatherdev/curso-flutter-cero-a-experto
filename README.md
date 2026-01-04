@@ -112,7 +112,7 @@ This Flutter app, `yes_no_maybe_app`, demonstrates how to build a simple chat in
         </ul>
       </td>
       <td align="center">
-        <video src="https://github.com/user-attachments/assets/33a26514-f395-4fda-a12e-aeb60c470e3d" width="250" alt="android_yes_no_maybe_app"/>
+        <img src="https://github.com/user-attachments/assets/f76bda39-1f54-4661-981d-463902004bb6" width="250" alt="android_yes_no_maybe_app"/>
       </td>
       <td align="center">
         <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
@@ -122,10 +122,47 @@ This Flutter app, `yes_no_maybe_app`, demonstrates how to build a simple chat in
   </table>
 </div>
 
+### Yes No Maybe Provider App
 
+The `yes_no_maybe_provider_app` is a Flutter chat application that demonstrates state management with `Provider`, HTTP requests using `Dio`, and dynamic UI updates based on external API responses. It features a conversational interface where the user sends messages, and an automated system replies with yes/no/maybe answers fetched from the YesNo API, often accompanied by animated GIFs. This example highlights clean architecture with separation of concerns, reactive state updates, and integration of external data sources to build a responsive and themed chat experience.
 
-
-
+<div align="center">
+  <table border="0">
+    <tr>
+      <th>Skills</th>
+      <th>Android App</th>
+      <th>iOS App</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Implemented state management using Provider</li>
+          <li>Created ChatProvider extending ChangeNotifier</li>
+          <li>Integrated Dio for HTTP requests</li>
+          <li>Fetched yes/no/maybe answers from external API</li>
+          <li>Mapped JSON responses into Dart models (YesNoModel)</li>
+          <li>Separated entities, models, helpers, and providers in core layer</li>
+          <li>Built ChatScreen with scrollable message list</li>
+          <li>Managed scroll behavior with ScrollController</li>
+          <li>Configured MaterialApp with custom AppTheme and Material 3 design</li>
+          <li>Developed HerMessageBubble with text and image content</li>
+          <li>Developed HisMessageBubble for user messages</li>
+          <li>Created MessageFieldBox with TextFormField and send button</li>
+          <li>Handled focus and keyboard dismissal for better UX</li>
+          <li>Implemented conditional automated replies when message ends with “?”</li>
+          <li>Displayed loading feedback for network images</li>
+        </ul>
+      </td>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/e30f5c35-82e4-4bb4-9da1-444c41481994" width="250" alt="android_yes_no_maybe_provider_app"/>
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
+        Not available
+      </td>
+    </tr>
+  </table>
+</div>
 
 
 ### TokTik App

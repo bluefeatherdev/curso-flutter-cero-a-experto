@@ -208,11 +208,50 @@ The `TokTik App` is a Flutter application that replicates a vertical video scrol
 </div>
 
 
+### TokTik Datasources Repositories App
 
+The `TokTik Datasources Repositories App` is a Flutter application that extends the vertical video scrolling experience with a Clean Architecture approach. It separates concerns into `datasources`, `repositories`, and `entities`, ensuring scalability and testability. The app uses a `VideoPostsDatasource` to define data contracts, a `VideoPostsRepository` to abstract business logic, and `DiscoverProvider` for state management with dependency injection. Video playback is powered by the `video_player` package, while UI components like `FullscreenPlayer`, `VideoButtons`, and gradient overlays create an immersive feed. This example demonstrates how to integrate the repository pattern, provider-based state management, and Material 3 theming to build a maintainable and extensible video application.
 
-
-
-
+<div align="center">
+  <table border="0">
+    <tr>
+      <th>Skills</th>
+      <th>Android App</th>
+      <th>iOS App</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Applied Clean Architecture with datasources, repositories, and entities</li>
+          <li>Defined VideoPostsDatasource abstract class for data contracts</li>
+          <li>Implemented LocalVideoDatasource with simulated network delays</li>
+          <li>Created VideoPostsRepository abstraction for business logic</li>
+          <li>Delegated data operations via VideoPostsRepositoryImplementation</li>
+          <li>Configured dependency injection in main.dart</li>
+          <li>Injected repository into DiscoverProvider using constructor injection</li>
+          <li>Managed state with Provider and ChangeNotifier</li>
+          <li>Built DiscoverScreen with conditional loading and video feed</li>
+          <li>Implemented vertical PageView with smooth transitions</li>
+          <li>Integrated video_player for autoplay, looping, and muted playback</li>
+          <li>Handled lifecycle with initState and dispose</li>
+          <li>Formatted numbers with intl compactCurrency</li>
+          <li>Created reusable widgets: VideoButtons, VideoScrollableView, VideoBackground</li>
+          <li>Added gesture detection for play/pause control</li>
+          <li>Used animate_do for spinning play icon animation</li>
+          <li>Enabled easy extension for remote or cached datasources</li>
+          <li>Maintained testability and scalability with repository pattern</li>
+        </ul>
+      </td>
+      <td align="center">
+        <video src="https://github.com/user-attachments/assets/5d1d4f2a-ea08-4870-8e3a-0a4bd6f8661a" width="250" alt="android_toktik_datasources_repositories_app"/>
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
+        Not available
+      </td>
+    </tr>
+  </table>
+</div>
 
 > This repository is licensed under the terms of the [Apache License 2.0](LICENSE). 
 

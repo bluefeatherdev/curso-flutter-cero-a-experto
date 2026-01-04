@@ -295,8 +295,46 @@ The `Basic Widgets App` is a Flutter application that demonstrates fundamental M
   </table>
 </div>
 
+### Intermediate Widgets App
 
+The `Intermediate Widgets App` is a Flutter application that extends basic widget concepts with interactive UI controls, progress indicators, snackbars, dialogs, animated containers, infinite scrolling, and onboarding tutorial screens. It demonstrates intermediate Material Design 3 patterns using `StatefulWidget`, `setState`, and reactive programming with streams. The app integrates `GoRouter` for navigation, `ScaffoldMessenger` for snackbars, `PageView` for tutorials, and `AnimatedContainer` for dynamic animations. This example highlights how to build responsive, interactive, and stateful UIs with clean modular architecture and modern Flutter practices.
 
+<div align="center">
+  <table border="0">
+    <tr>
+      <th>Skills</th>
+      <th>Android App</th>
+      <th>iOS App</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Configured MaterialApp.router with GoRouter for extended navigation</li>
+          <li>Implemented ProgressScreen with CircularProgressIndicator and StreamBuilder</li>
+          <li>Created SnackbarsDialogsScreen using ScaffoldMessenger, AboutDialog, and AlertDialog</li>
+          <li>Built UiControlsScreen with SwitchListTile, ExpansionTile, RadioListTile, and CheckboxListTile</li>
+          <li>Developed AppTutorialScreen with PageView, PageController, and animate_do animations</li>
+          <li>Implemented InfiniteScrollScreen with ScrollController and RefreshIndicator</li>
+          <li>Loaded dynamic images from picsum.photos with simulated delays</li>
+          <li>Created AnimatedScreen using AnimatedContainer and Random for shape generation</li>
+          <li>Applied elasticOut curve for smooth transitions</li>
+          <li>Expanded menu system with eight navigation items</li>
+          <li>Configured AppTheme with Material 3 design system</li>
+          <li>Used ListView.builder for efficient menu rendering</li>
+          <li>Implemented floating action buttons for navigation and interactions</li>
+          <li>Ensured modular architecture separating core, UI, and theme layers</li>
+        </ul>
+      </td>
+      <td align="center">
+        <video src="https://github.com/user-attachments/assets/429db6b0-b14f-4651-89da-b356400f2864" width="250" alt="android_basic_widgets_app"/>
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
+        Not available
+      </td>
+    </tr>
+  </table>
+</div>
 
 
 > This repository is licensed under the terms of the [Apache License 2.0](LICENSE). 

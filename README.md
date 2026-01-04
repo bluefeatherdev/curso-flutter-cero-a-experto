@@ -38,7 +38,8 @@ The Flutter Demo Home Page is the default counter app included in the SDK. It sh
         </ul>
       </td>
       <td align="center">
-        <img src="https://github.com/user-attachments/assets/c4a5a512-48e0-4ac0-a07d-56bc0e8c09d8" width="250" alt="android_flutter_installation_01"/>
+        <!-- <img src="https://github.com/user-attachments/assets/c4a5a512-48e0-4ac0-a07d-56bc0e8c09d8" width="250" alt="android_flutter_installation_01"/> -->
+        Not available
       </td>
       <td align="center">
         <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_flutter_installation_01" /> -->
@@ -75,7 +76,8 @@ This Flutter Counter App builds on the default demo by adding custom features. I
         </ul>
       </td>
       <td align="center">
-        <video src="https://github.com/user-attachments/assets/4d1cbd0c-da29-4f86-b590-fc3a069ae1ee" width="250" alt="android_flutter_counter_app"/>
+        <!-- <video src="https://github.com/user-attachments/assets/4d1cbd0c-da29-4f86-b590-fc3a069ae1ee" width="250" alt="android_flutter_counter_app"/> -->
+        Not available
       </td>
       <td align="center">
         <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->

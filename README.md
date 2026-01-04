@@ -6,6 +6,8 @@
 
 Curso de Udemy
 
+> This repository is licensed under the terms of the [Apache License 2.0](LICENSE). 
+
 ## ?
 
 ### 1. Dart Introduction
@@ -387,8 +389,5 @@ The `Advanced Widgets App` is a Flutter application that demonstrates production
     </tr>
   </table>
 </div>
-
-
-> This repository is licensed under the terms of the [Apache License 2.0](LICENSE). 
 
 > Made with '\u{2665}' (♥) by Jesús Domínguez [@bluefeatherdev](https://github.com/bluefeatherdev)

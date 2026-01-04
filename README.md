@@ -243,7 +243,7 @@ The `TokTik Datasources Repositories App` is a Flutter application that extends 
         </ul>
       </td>
       <td align="center">
-        <video src="https://github.com/user-attachments/assets/5d1d4f2a-ea08-4870-8e3a-0a4bd6f8661a" width="250" alt="android_toktik_datasources_repositories_app"/>
+        <video src="https://github.com/user-attachments/assets/5659499e-392c-4138-a406-418959157be2" width="250" alt="android_toktik_datasources_repositories_app"/>
       </td>
       <td align="center">
         <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
@@ -252,6 +252,52 @@ The `TokTik Datasources Repositories App` is a Flutter application that extends 
     </tr>
   </table>
 </div>
+
+### Basic Widgets App
+
+The `Basic Widgets App` is a Flutter application that demonstrates fundamental Material Design 3 widgets and navigation patterns using `GoRouter`. It showcases a gallery of button types, card variations, and a modular routing system with a data-driven menu. The app uses `MaterialApp.router` for declarative navigation, `AppTheme` for customizable Material 3 styling, and separates functionality into screens, themes, and routing modules. This example highlights responsive layouts with `Wrap`, custom button creation, card elevation variations, and efficient navigation through a centralized router, making it a solid foundation for learning core Flutter UI components.
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <th>Skills</th>
+      <th>Android App</th>
+      <th>iOS App</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Configured MaterialApp.router with GoRouter</li>
+          <li>Implemented centralized routing in app_router.dart</li>
+          <li>Created AppTheme with Material 3 design system</li>
+          <li>Built HomeScreen with dynamic ListView menu</li>
+          <li>Defined MenuItems model for navigation structure</li>
+          <li>Showcased multiple button types (Elevated, Filled, Outlined, Text, Icon)</li>
+          <li>Developed CustomButton with ClipRRect, Material, and InkWell</li>
+          <li>Implemented CardsScreen with elevation, outlined, filled, and image cards</li>
+          <li>Used Stack layout for image card overlays</li>
+          <li>Applied responsive layouts with Wrap widget</li>
+          <li>Configured appBarTheme for consistent header styling</li>
+          <li>Implemented backward navigation with context.pop()</li>
+          <li>Prepared placeholder screens for animations, tutorials, infinite scroll, progress, snackbar, and UI controls</li>
+          <li>Applied data-driven menu rendering with ListView.builder</li>
+          <li>Ensured modular architecture separating core, UI, and theme layers</li>
+        </ul>
+      </td>
+      <td align="center">
+        <video src="https://github.com/user-attachments/assets/34e7b910-d656-4d53-ba9f-2c2298d9321e" width="250" alt="android_basic_widgets_app"/>
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
+        Not available
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+
+
 
 > This repository is licensed under the terms of the [Apache License 2.0](LICENSE). 
 

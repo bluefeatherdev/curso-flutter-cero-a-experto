@@ -27,13 +27,18 @@ Curso de Udemy
     <tr>
       <td>
         <ul>
-          <li>I learn this</li>
-          <li>I learn that</li>
-          <li>It's awesome</li>
+          <li>Installed Flutter SDK</li>
+          <li>Configured VS Code extensions</li>
+          <li>Ran basic Flutter commands (flutter doctor)</li>
+          <li>Created a new Flutter project</li>
+          <li>Debugged app via USB device</li>
+          <li>Explored default counter app structure</li>
+          <li>Understood main.dart entry point</li>
+          <li>Learned hot reload & hot restart</li>
         </ul>
       </td>
       <td align="center">
-        <img src="https://github.com/user-attachments/assets/04d9915c-ded3-4b05-a41b-2938d35f46c3" width="250" alt="android_flutter_installation_01"/>
+        <img src="https://github.com/user-attachments/assets/c4a5a512-48e0-4ac0-a07d-56bc0e8c09d8" width="250" alt="android_flutter_installation_01"/>
       </td>
       <td align="center">
         <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_flutter_installation_01" /> -->
@@ -42,7 +47,6 @@ Curso de Udemy
     </tr>
   </table>
 </div>
-
 
 ### First Steps
 

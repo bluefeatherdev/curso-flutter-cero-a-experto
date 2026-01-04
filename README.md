@@ -4,11 +4,11 @@
 ![Static Badge](https://img.shields.io/badge/language-dart-0175C2?style=for-the-badge&logo=dart&logoColor=white&labelColor=101010) 
 ![Static Badge](https://img.shields.io/badge/Scripting-bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=101010)
 
-Curso de Udemy
+This repository is a personal learning log where I document and share my progress through the Udemy course *Flutter - Móvil: De cero a experto (2023 Edition)*. It contains practical examples, apps, and notes built with sound null safety, covering everything from Dart fundamentals to advanced Flutter concepts such as state management, clean architecture, and real-world mobile development practices.
 
 > This repository is licensed under the terms of the [Apache License 2.0](LICENSE). 
 
-## ?
+## My Learning Path
 
 ### 1. Dart Introduction
 

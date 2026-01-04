@@ -167,7 +167,51 @@ The `yes_no_maybe_provider_app` is a Flutter chat application that demonstrates 
 
 ### TokTik App
 
-?
+The `TokTik App` is a Flutter application that replicates a vertical video scrolling experience similar to TikTok. It uses `PageView.builder` with vertical scrolling to display fullscreen videos, integrates `VideoPlayerController` for playback, and manages state with `Provider`. The UI combines a `Stack` layout with gradient overlays, captions, and interactive buttons for likes, views, and playback control. Features include autoplay, looping, muted audio, gesture detection for play/pause, and animated icons using `animate_do`. This example demonstrates clean architecture, responsive design, and modern Material 3 theming for building immersive video feed applications.
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <th>Skills</th>
+      <th>Android App</th>
+      <th>iOS App</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Implemented vertical video feed with PageView.builder</li>
+          <li>Configured BouncingScrollPhysics for smooth transitions</li>
+          <li>Managed state with Provider and DiscoverProvider</li>
+          <li>Integrated video_player package for playback</li>
+          <li>Controlled lifecycle with initState and dispose</li>
+          <li>Created LocalVideoModel with fromJson and entity conversion</li>
+          <li>Formatted numbers with intl NumberFormat.compactCurrency</li>
+          <li>Built UI using Stack layout with positioned widgets</li>
+          <li>Added gradient overlay for text readability</li>
+          <li>Developed VideoButtons widget with likes, views, and animated play icon</li>
+          <li>Implemented gesture detection for play/pause control</li>
+          <li>Applied Material 3 dark theme with AppTheme</li>
+          <li>Handled video initialization with FutureBuilder</li>
+          <li>Ensured autoplay, looping, and muted playback by default</li>
+          <li>Created reusable shared and video-specific widgets</li>
+        </ul>
+      </td>
+      <td align="center">
+        <video src="https://github.com/user-attachments/assets/7b586eaa-7c57-488b-bc45-f4c93f5e50e7" width="250" alt="android_toktik_app"/>
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
+        Not available
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+
+
+
+
 
 
 > This repository is licensed under the terms of the [Apache License 2.0](LICENSE). 

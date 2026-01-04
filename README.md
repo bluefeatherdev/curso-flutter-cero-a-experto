@@ -326,7 +326,50 @@ The `Intermediate Widgets App` is a Flutter application that extends basic widge
         </ul>
       </td>
       <td align="center">
-        <video src="https://github.com/user-attachments/assets/429db6b0-b14f-4651-89da-b356400f2864" width="250" alt="android_basic_widgets_app"/>
+        <video src="https://github.com/user-attachments/assets/429db6b0-b14f-4651-89da-b356400f2864" width="250" alt="android_intermediate_widgets_app"/>
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
+        Not available
+      </td>
+    </tr>
+  </table>
+</div>
+
+### Advanced Widgets App
+
+The `Advanced Widgets App` is a Flutter application that demonstrates production-ready architecture with advanced state management using `Riverpod`, dynamic theming with persistent color selection and dark mode toggle, and enhanced navigation through a `NavigationDrawer`. It integrates `ProviderScope` for global state management, `ConsumerWidget` for reactive UI updates, and a modular routing system with `GoRouter`. The app showcases complex widget patterns including counters, theme changers, infinite scroll, animated containers, and onboarding tutorials, all styled with Material 3 design principles. This example highlights scalable architecture, reactive theming, and comprehensive navigation for modern Flutter applications.
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <th>Skills</th>
+      <th>Android App</th>
+      <th>iOS App</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Wrapped application with ProviderScope for Riverpod state management</li>
+          <li>Configured MaterialApp.router with dynamic theme from themeNotifierProvider</li>
+          <li>Implemented counterProvider as StateProvider<int> for reactive counter state</li>
+          <li>Created ThemeNotifier with toggleDarkMode and changeColorIndex methods</li>
+          <li>Integrated multiple providers: colorListProvider, isDarkModeProvider, selectedColorProvider</li>
+          <li>Developed ThemeChangerScreen with RadioListTile for color selection</li>
+          <li>Built RiverpodCounterScreen as ConsumerWidget with reactive counter updates</li>
+          <li>Implemented SideMenu using NavigationDrawer with grouped sections</li>
+          <li>Configured GoRouter for advanced navigation across ten screens</li>
+          <li>Applied notch detection for adaptive drawer padding</li>
+          <li>Ensured automatic drawer closing with scaffoldKey and Navigator.pop</li>
+          <li>Created AppTheme class for dynamic ThemeData generation</li>
+          <li>Showcased Material 3 styling with dark mode support</li>
+          <li>Expanded menu system with ten navigation items</li>
+          <li>Maintained modular architecture separating core, UI, and theme layers</li>
+          <li>Verified theme persistence across navigation and screen transitions</li>
+        </ul>
+      </td>
+      <td align="center">
+        <video src="https://github.com/user-attachments/assets/6a336e86-c37b-41a8-af4e-b5a691a5f680" width="250" alt="android_advanced_widgets_app"/>
       </td>
       <td align="center">
         <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->

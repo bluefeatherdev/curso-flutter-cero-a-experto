@@ -12,8 +12,7 @@ This repository is a personal learning log where I document and share my progres
 
 ### 1. Dart Introduction
 
-?
-
+The `Dart Introduction` section covers the fundamentals of the language, starting from `Hello World` and moving into variables, control flow, and functions. It explores concepts like `classes`, `abstract classes`, and `mixins`, showing how they are applied in architectural patterns. This stage builds the foundation for understanding `stateless` and `stateful` components in Flutter by practicing core Dart syntax, object-oriented programming, and asynchronous features such as `Future` and `Stream`.
 
 ### 2. Flutter Installation
 

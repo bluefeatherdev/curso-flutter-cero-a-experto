@@ -8,12 +8,12 @@ Curso de Udemy
 
 ## ?
 
-### Dart Introduction
+### 1. Dart Introduction
 
 ?
 
 
-### Flutter Installation
+### 2. Flutter Installation
 
 The Flutter Demo Home Page is the default counter app included in the SDK. It shows a number on screen that increases each time the `FloatingActionButton` is pressed, demonstrating state management with `StatefulWidget`, `setState()`, and the basic use of `Scaffold`, `AppBar`, and layout widgets.
 
@@ -49,7 +49,7 @@ The Flutter Demo Home Page is the default counter app included in the SDK. It sh
   </table>
 </div>
 
-### First Steps
+### 3. First Steps
 
 This Flutter Counter App builds on the default demo by adding custom features. It uses a `StatefulWidget` to manage the counter state, includes an `AppBar` with a reset `IconButton`, and updates the text dynamically to show `Click` or `Clicks` depending on the value. The app demonstrates conditional rendering, state updates with `setState()`, and Material 3 theming with a customized `FloatingActionButton`.
 
@@ -87,7 +87,7 @@ This Flutter Counter App builds on the default demo by adding custom features. I
   </table>
 </div>
 
-### Yes No Maybe App
+### 4. Yes No Maybe App
 
 This Flutter app, `yes_no_maybe_app`, demonstrates how to build a simple chat interface with custom themes and styled message bubbles. It uses `MaterialApp` configured with a custom `AppTheme`, and a `ChatScreen` that displays alternating `HerMessageBubble` and `HisMessageBubble` inside a `ListView`. The `MessageFieldBox` provides text input handling with a send button and submit action, while `HerMessageBubble` can include both text and images through an `_ImageBubble`. This example highlights theme customization, conditional UI components, and the basics of building a personalized chat interface in Flutter.
 
@@ -125,7 +125,7 @@ This Flutter app, `yes_no_maybe_app`, demonstrates how to build a simple chat in
   </table>
 </div>
 
-### Yes No Maybe Provider App
+### 5. Yes No Maybe Provider App
 
 The `yes_no_maybe_provider_app` is a Flutter chat application that demonstrates state management with `Provider`, HTTP requests using `Dio`, and dynamic UI updates based on external API responses. It features a conversational interface where the user sends messages, and an automated system replies with yes/no/maybe answers fetched from the YesNo API, often accompanied by animated GIFs. This example highlights clean architecture with separation of concerns, reactive state updates, and integration of external data sources to build a responsive and themed chat experience.
 
@@ -169,7 +169,7 @@ The `yes_no_maybe_provider_app` is a Flutter chat application that demonstrates 
 </div>
 
 
-### TokTik App
+### 6. TokTik App
 
 The `TokTik App` is a Flutter application that replicates a vertical video scrolling experience similar to TikTok. It uses `PageView.builder` with vertical scrolling to display fullscreen videos, integrates `VideoPlayerController` for playback, and manages state with `Provider`. The UI combines a `Stack` layout with gradient overlays, captions, and interactive buttons for likes, views, and playback control. Features include autoplay, looping, muted audio, gesture detection for play/pause, and animated icons using `animate_do`. This example demonstrates clean architecture, responsive design, and modern Material 3 theming for building immersive video feed applications.
 
@@ -213,7 +213,7 @@ The `TokTik App` is a Flutter application that replicates a vertical video scrol
 </div>
 
 
-### TokTik Datasources Repositories App
+### 7. TokTik Datasources Repositories App
 
 The `TokTik Datasources Repositories App` is a Flutter application that extends the vertical video scrolling experience with a Clean Architecture approach. It separates concerns into `datasources`, `repositories`, and `entities`, ensuring scalability and testability. The app uses a `VideoPostsDatasource` to define data contracts, a `VideoPostsRepository` to abstract business logic, and `DiscoverProvider` for state management with dependency injection. Video playback is powered by the `video_player` package, while UI components like `FullscreenPlayer`, `VideoButtons`, and gradient overlays create an immersive feed. This example demonstrates how to integrate the repository pattern, provider-based state management, and Material 3 theming to build a maintainable and extensible video application.
 
@@ -259,7 +259,7 @@ The `TokTik Datasources Repositories App` is a Flutter application that extends 
   </table>
 </div>
 
-### Basic Widgets App
+### 8. Basic Widgets App
 
 The `Basic Widgets App` is a Flutter application that demonstrates fundamental Material Design 3 widgets and navigation patterns using `GoRouter`. It showcases a gallery of button types, card variations, and a modular routing system with a data-driven menu. The app uses `MaterialApp.router` for declarative navigation, `AppTheme` for customizable Material 3 styling, and separates functionality into screens, themes, and routing modules. This example highlights responsive layouts with `Wrap`, custom button creation, card elevation variations, and efficient navigation through a centralized router, making it a solid foundation for learning core Flutter UI components.
 
@@ -302,7 +302,7 @@ The `Basic Widgets App` is a Flutter application that demonstrates fundamental M
   </table>
 </div>
 
-### Intermediate Widgets App
+### 9. Intermediate Widgets App
 
 The `Intermediate Widgets App` is a Flutter application that extends basic widget concepts with interactive UI controls, progress indicators, snackbars, dialogs, animated containers, infinite scrolling, and onboarding tutorial screens. It demonstrates intermediate Material Design 3 patterns using `StatefulWidget`, `setState`, and reactive programming with streams. The app integrates `GoRouter` for navigation, `ScaffoldMessenger` for snackbars, `PageView` for tutorials, and `AnimatedContainer` for dynamic animations. This example highlights how to build responsive, interactive, and stateful UIs with clean modular architecture and modern Flutter practices.
 
@@ -344,7 +344,7 @@ The `Intermediate Widgets App` is a Flutter application that extends basic widge
   </table>
 </div>
 
-### Advanced Widgets App
+### 10. Advanced Widgets App
 
 The `Advanced Widgets App` is a Flutter application that demonstrates production-ready architecture with advanced state management using `Riverpod`, dynamic theming with persistent color selection and dark mode toggle, and enhanced navigation through a `NavigationDrawer`. It integrates `ProviderScope` for global state management, `ConsumerWidget` for reactive UI updates, and a modular routing system with `GoRouter`. The app showcases complex widget patterns including counters, theme changers, infinite scroll, animated containers, and onboarding tutorials, all styled with Material 3 design principles. This example highlights scalable architecture, reactive theming, and comprehensive navigation for modern Flutter applications.
 

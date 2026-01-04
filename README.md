@@ -50,7 +50,48 @@ The Flutter Demo Home Page is the default counter app included in the SDK. It sh
 
 ### First Steps
 
-?
+This Flutter Counter App builds on the default demo by adding custom features. It uses a `StatefulWidget` to manage the counter state, includes an `AppBar` with a reset `IconButton`, and updates the text dynamically to show `Click` or `Clicks` depending on the value. The app demonstrates conditional rendering, state updates with `setState()`, and Material 3 theming with a customized `FloatingActionButton`.
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <th>Skills</th>
+      <th>Android App</th>
+      <th>iOS App</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Configured MaterialApp with Material 3 theme</li>
+          <li>Disabled debug banner in Flutter projects</li>
+          <li>Created custom CounterScreen widget</li>
+          <li>Implemented StatefulWidget for dynamic state</li>
+          <li>Used setState() to update UI</li>
+          <li>Added AppBar actions with IconButton</li>
+          <li>Implemented reset functionality for counter</li>
+          <li>Applied conditional rendering for singular/plural text</li>
+          <li>Customized Text styles with font size and weight</li>
+          <li>Integrated FloatingActionButton with custom icon</li>
+        </ul>
+      </td>
+      <td align="center">
+        <video src="https://github.com/user-attachments/assets/4d1cbd0c-da29-4f86-b590-fc3a069ae1ee" width="250" alt="android_flutter_counter_app"/>
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
+        Not available
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+
+
+
+
+
+
 
 ### Yes No Maybe App
 

@@ -38,11 +38,11 @@ The Flutter Demo Home Page is the default counter app included in the SDK. It sh
         </ul>
       </td>
       <td align="center">
-        <!-- <img src="https://github.com/user-attachments/assets/c4a5a512-48e0-4ac0-a07d-56bc0e8c09d8" width="250" alt="android_flutter_installation_01"/> -->
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
         Not available
       </td>
       <td align="center">
-        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_flutter_installation_01" /> -->
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
         Not available
       </td>
     </tr>
@@ -76,11 +76,11 @@ This Flutter Counter App builds on the default demo by adding custom features. I
         </ul>
       </td>
       <td align="center">
-        <!-- <video src="https://github.com/user-attachments/assets/4d1cbd0c-da29-4f86-b590-fc3a069ae1ee" width="250" alt="android_flutter_counter_app"/> -->
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
         Not available
       </td>
       <td align="center">
-        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
         Not available
       </td>
     </tr>
@@ -114,7 +114,7 @@ This Flutter app, `yes_no_maybe_app`, demonstrates how to build a simple chat in
         </ul>
       </td>
       <td align="center">
-        <!-- <img src="https://github.com/user-attachments/assets/f76bda39-1f54-4661-981d-463902004bb6" width="250" alt="android_yes_no_maybe_app"/> -->
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
         Not available
       </td>
       <td align="center">
@@ -157,7 +157,7 @@ The `yes_no_maybe_provider_app` is a Flutter chat application that demonstrates 
         </ul>
       </td>
       <td align="center">
-        <!-- <img src="https://github.com/user-attachments/assets/e30f5c35-82e4-4bb4-9da1-444c41481994" width="250" alt="android_yes_no_maybe_provider_app"/> -->
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
         Not available
       </td>
       <td align="center">
@@ -201,7 +201,7 @@ The `TokTik App` is a Flutter application that replicates a vertical video scrol
         </ul>
       </td>
       <td align="center">
-        <!-- <video src="https://github.com/user-attachments/assets/7b586eaa-7c57-488b-bc45-f4c93f5e50e7" width="250" alt="android_toktik_app"/> -->
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
         Not available
       </td>
       <td align="center">
@@ -248,7 +248,7 @@ The `TokTik Datasources Repositories App` is a Flutter application that extends 
         </ul>
       </td>
       <td align="center">
-        <!-- <video src="https://github.com/user-attachments/assets/5659499e-392c-4138-a406-418959157be2" width="250" alt="android_toktik_datasources_repositories_app"/> -->
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
         Not available
       </td>
       <td align="center">
@@ -291,7 +291,7 @@ The `Basic Widgets App` is a Flutter application that demonstrates fundamental M
         </ul>
       </td>
       <td align="center">
-        <!-- <video src="https://github.com/user-attachments/assets/34e7b910-d656-4d53-ba9f-2c2298d9321e" width="250" alt="android_basic_widgets_app"/> -->
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
         Not available
       </td>
       <td align="center">
@@ -333,7 +333,7 @@ The `Intermediate Widgets App` is a Flutter application that extends basic widge
         </ul>
       </td>
       <td align="center">
-        <!-- <video src="https://github.com/user-attachments/assets/429db6b0-b14f-4651-89da-b356400f2864" width="250" alt="android_intermediate_widgets_app"/> -->
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
         Not available
       </td>
       <td align="center">
@@ -377,7 +377,7 @@ The `Advanced Widgets App` is a Flutter application that demonstrates production
         </ul>
       </td>
       <td align="center">
-        <!-- <video src="https://github.com/user-attachments/assets/6a336e86-c37b-41a8-af4e-b5a691a5f680" width="250" alt="android_advanced_widgets_app"/> -->
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
         Not available
       </td>
       <td align="center">

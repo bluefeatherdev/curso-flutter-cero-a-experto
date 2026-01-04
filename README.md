@@ -85,17 +85,48 @@ This Flutter Counter App builds on the default demo by adding custom features. I
   </table>
 </div>
 
-
-
-
-
-
-
-
-
 ### Yes No Maybe App
 
-?
+This Flutter app, `yes_no_maybe_app`, demonstrates how to build a simple chat interface with custom themes and styled message bubbles. It uses `MaterialApp` configured with a custom `AppTheme`, and a `ChatScreen` that displays alternating `HerMessageBubble` and `HisMessageBubble` inside a `ListView`. The `MessageFieldBox` provides text input handling with a send button and submit action, while `HerMessageBubble` can include both text and images through an `_ImageBubble`. This example highlights theme customization, conditional UI components, and the basics of building a personalized chat interface in Flutter.
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <th>Skills</th>
+      <th>Android App</th>
+      <th>iOS App</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Configured MaterialApp with custom AppTheme</li>
+          <li>Defined color themes using colorSchemeSeed</li>
+          <li>Built ChatScreen with Scaffold and AppBar</li>
+          <li>Implemented alternating message bubbles (HerMessageBubble & HisMessageBubble)</li>
+          <li>Created MessageFieldBox with TextFormField</li>
+          <li>Handled text input with TextEditingController and FocusNode</li>
+          <li>Customized InputDecoration with rounded borders and send icon</li>
+          <li>Implemented onFieldSubmitted and button press to clear text</li>
+          <li>Displayed network images with rounded corners in ImageBubble</li>
+          <li>Applied primary and secondary colors for styled message containers</li>
+        </ul>
+      </td>
+      <td align="center">
+        <video src="https://github.com/user-attachments/assets/33a26514-f395-4fda-a12e-aeb60c470e3d" width="250" alt="android_yes_no_maybe_app"/>
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
+        Not available
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+
+
+
+
 
 ### TokTik App
 

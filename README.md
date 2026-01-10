@@ -391,4 +391,42 @@ The `Advanced Widgets App` is a Flutter application that demonstrates production
   </table>
 </div>
 
+### 11. Cinemapedia Introduction App
+
+The `Cinemapedia Introduction App` is a Flutter project that demonstrates clean architecture principles with integration of the TMDb API. It applies `Riverpod` for state management, `GoRouter` for declarative navigation, and `flutter_dotenv` for secure environment configuration. The app separates concerns across domain, data, and presentation layers, using mappers to convert API models into domain entities. With `AppTheme` providing Material Design 3 styling, the application showcases a scalable structure, reactive UI updates, and robust pagination for movie listings.
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <th>Skills</th>
+      <th>Android App</th>
+      <th>iOS App</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Implemented clean architecture with domain, data, and presentation layers</li>
+          <li>Configured environment variables securely using flutter_dotenv</li>
+          <li>Defined abstract datasource and repository contracts</li>
+          <li>Integrated TMDb API with concrete datasource implementation</li>
+          <li>Mapped API models to domain entities with MovieMapper</li>
+          <li>Managed state reactively using Riverpod providers</li>
+          <li>Built paginated movie list with loading and error handling</li>
+          <li>Configured GoRouter for declarative navigation</li>
+          <li>Applied Material Design 3 theming with AppTheme</li>
+          <li>Ensured separation of concerns and scalability</li>
+        </ul>
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
+        Not available
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
+        Not available
+      </td>
+    </tr>
+  </table>
+</div>
+
 > Made with '\u{2665}' (♥) by Jesús Domínguez [@bluefeatherdev](https://github.com/bluefeatherdev)

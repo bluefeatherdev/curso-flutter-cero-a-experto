@@ -1,5 +1,5 @@
 // Cinemapedia Basic UI
-import 'package:cinemapedia_basic_ui/core/data/models/movie_moviedb.dart';
+import 'package:cinemapedia_basic_ui/core/data/models/moviedb/movie_moviedb.dart';
 
 class MoviedbResponse {
   MoviedbResponse({

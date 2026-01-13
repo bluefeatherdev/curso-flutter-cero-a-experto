@@ -429,4 +429,46 @@ The `Cinemapedia Introduction App` is a Flutter project that demonstrates clean 
   </table>
 </div>
 
+### 12. Cinemapedia Basic UI
+
+The `Cinemapedia Basic UI` app is a Flutter project that demonstrates clean architecture with TMDb API integration, focusing on separation of concerns between domain, data, and presentation layers. It uses `Riverpod` for reactive state management, `GoRouter` for declarative navigation, and `flutter_dotenv` for secure environment configuration. The UI showcases Material Design 3 theming, custom app bars, bottom navigation, horizontal movie lists with pagination, and animated carousels powered by `card_swiper` and `animate_do`. This example highlights scalable architecture, reusable widgets, and smooth user experience for movie browsing.
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <th>Skills</th>
+      <th>Android App</th>
+      <th>iOS App</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Implemented clean architecture with domain, data, and presentation layers</li>
+          <li>Configured environment variables securely using flutter_dotenv</li>
+          <li>Defined abstract datasource and repository contracts</li>
+          <li>Integrated TMDb API with concrete datasource implementation</li>
+          <li>Mapped API models to domain entities with MovieMapper</li>
+          <li>Managed state reactively using Riverpod providers</li>
+          <li>Built HomeScreen with horizontal movie lists and pagination</li>
+          <li>Created MoviesSlideshow widget with card_swiper animations</li>
+          <li>Developed reusable MoviesHorizontalListView component</li>
+          <li>Added CustomAppBar and CustomBottomNavigation for consistent UI</li>
+          <li>Implemented FullScreenLoader for initial data fetching</li>
+          <li>Configured GoRouter for declarative navigation</li>
+          <li>Applied Material Design 3 theming with AppTheme</li>
+          <li>Enhanced UX with animate_do transitions and carousel effects</li>
+        </ul>
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
+        Not available
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
+        Not available
+      </td>
+    </tr>
+  </table>
+</div>
+
 > Made with '\u{2665}' (♥) by Jesús Domínguez [@bluefeatherdev](https://github.com/bluefeatherdev)

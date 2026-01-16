@@ -12,11 +12,11 @@
 
 ## My Learning Path
 
-### 1. Dart Introduction
+### [1. Dart Introduction](./01-dart-introduction/)
 
 The `Dart Introduction` section covers the fundamentals of the language, starting from `Hello World` and moving into variables, control flow, and functions. It explores concepts like `classes`, `abstract classes`, and `mixins`, showing how they are applied in architectural patterns. This stage builds the foundation for understanding `stateless` and `stateful` components in Flutter by practicing core Dart syntax, object-oriented programming, and asynchronous features such as `Future` and `Stream`.
 
-### 2. Flutter Installation
+### [2. Flutter Installation](./02-flutter-installation/flutter_application)
 
 The Flutter Demo Home Page is the default counter app included in the SDK. It shows a number on screen that increases each time the `FloatingActionButton` is pressed, demonstrating state management with `StatefulWidget`, `setState()`, and the basic use of `Scaffold`, `AppBar`, and layout widgets.
 
@@ -52,7 +52,7 @@ The Flutter Demo Home Page is the default counter app included in the SDK. It sh
   </table>
 </div>
 
-### 3. First Steps
+### [3. First Steps](./03-first-steps/flutter_counter_app/)
 
 This Flutter Counter App builds on the default demo by adding custom features. It uses a `StatefulWidget` to manage the counter state, includes an `AppBar` with a reset `IconButton`, and updates the text dynamically to show `Click` or `Clicks` depending on the value. The app demonstrates conditional rendering, state updates with `setState()`, and Material 3 theming with a customized `FloatingActionButton`.
 
@@ -90,7 +90,7 @@ This Flutter Counter App builds on the default demo by adding custom features. I
   </table>
 </div>
 
-### 4. Yes No Maybe App
+### [4. Yes No Maybe App](./04-yes-no-maybe-app/yes_no_maybe_app/)
 
 This Flutter app, `yes_no_maybe_app`, demonstrates how to build a simple chat interface with custom themes and styled message bubbles. It uses `MaterialApp` configured with a custom `AppTheme`, and a `ChatScreen` that displays alternating `HerMessageBubble` and `HisMessageBubble` inside a `ListView`. The `MessageFieldBox` provides text input handling with a send button and submit action, while `HerMessageBubble` can include both text and images through an `_ImageBubble`. This example highlights theme customization, conditional UI components, and the basics of building a personalized chat interface in Flutter.
 
@@ -128,7 +128,7 @@ This Flutter app, `yes_no_maybe_app`, demonstrates how to build a simple chat in
   </table>
 </div>
 
-### 5. Yes No Maybe Provider App
+### [5. Yes No Maybe Provider App](./05-yes-no-maybe-provider-app/yes_no_maybe_provider_app/)
 
 The `yes_no_maybe_provider_app` is a Flutter chat application that demonstrates state management with `Provider`, HTTP requests using `Dio`, and dynamic UI updates based on external API responses. It features a conversational interface where the user sends messages, and an automated system replies with yes/no/maybe answers fetched from the YesNo API, often accompanied by animated GIFs. This example highlights clean architecture with separation of concerns, reactive state updates, and integration of external data sources to build a responsive and themed chat experience.
 
@@ -172,7 +172,7 @@ The `yes_no_maybe_provider_app` is a Flutter chat application that demonstrates 
 </div>
 
 
-### 6. TokTik App
+### [6. TokTik App](./06-toktik-app/toktik_app/)
 
 The `TokTik App` is a Flutter application that replicates a vertical video scrolling experience similar to TikTok. It uses `PageView.builder` with vertical scrolling to display fullscreen videos, integrates `VideoPlayerController` for playback, and manages state with `Provider`. The UI combines a `Stack` layout with gradient overlays, captions, and interactive buttons for likes, views, and playback control. Features include autoplay, looping, muted audio, gesture detection for play/pause, and animated icons using `animate_do`. This example demonstrates clean architecture, responsive design, and modern Material 3 theming for building immersive video feed applications.
 
@@ -216,7 +216,7 @@ The `TokTik App` is a Flutter application that replicates a vertical video scrol
 </div>
 
 
-### 7. TokTik Datasources Repositories App
+### [7. TokTik Datasources Repositories App](./07-toktik-datasources-repositories-app/toktik_datasources_repositories_app/)
 
 The `TokTik Datasources Repositories App` is a Flutter application that extends the vertical video scrolling experience with a Clean Architecture approach. It separates concerns into `datasources`, `repositories`, and `entities`, ensuring scalability and testability. The app uses a `VideoPostsDatasource` to define data contracts, a `VideoPostsRepository` to abstract business logic, and `DiscoverProvider` for state management with dependency injection. Video playback is powered by the `video_player` package, while UI components like `FullscreenPlayer`, `VideoButtons`, and gradient overlays create an immersive feed. This example demonstrates how to integrate the repository pattern, provider-based state management, and Material 3 theming to build a maintainable and extensible video application.
 
@@ -262,7 +262,7 @@ The `TokTik Datasources Repositories App` is a Flutter application that extends 
   </table>
 </div>
 
-### 8. Basic Widgets App
+### [8. Basic Widgets App](./08-basic-widgets-app/basic_widgets_app/)
 
 The `Basic Widgets App` is a Flutter application that demonstrates fundamental Material Design 3 widgets and navigation patterns using `GoRouter`. It showcases a gallery of button types, card variations, and a modular routing system with a data-driven menu. The app uses `MaterialApp.router` for declarative navigation, `AppTheme` for customizable Material 3 styling, and separates functionality into screens, themes, and routing modules. This example highlights responsive layouts with `Wrap`, custom button creation, card elevation variations, and efficient navigation through a centralized router, making it a solid foundation for learning core Flutter UI components.
 
@@ -305,7 +305,7 @@ The `Basic Widgets App` is a Flutter application that demonstrates fundamental M
   </table>
 </div>
 
-### 9. Intermediate Widgets App
+### [9. Intermediate Widgets App](./09-intermediate-widgets-app/intermediate_widgets_app/)
 
 The `Intermediate Widgets App` is a Flutter application that extends basic widget concepts with interactive UI controls, progress indicators, snackbars, dialogs, animated containers, infinite scrolling, and onboarding tutorial screens. It demonstrates intermediate Material Design 3 patterns using `StatefulWidget`, `setState`, and reactive programming with streams. The app integrates `GoRouter` for navigation, `ScaffoldMessenger` for snackbars, `PageView` for tutorials, and `AnimatedContainer` for dynamic animations. This example highlights how to build responsive, interactive, and stateful UIs with clean modular architecture and modern Flutter practices.
 
@@ -347,7 +347,7 @@ The `Intermediate Widgets App` is a Flutter application that extends basic widge
   </table>
 </div>
 
-### 10. Advanced Widgets App
+### [10. Advanced Widgets App](./10-advanced-widgets-app/advanced_widgets_app/)
 
 The `Advanced Widgets App` is a Flutter application that demonstrates production-ready architecture with advanced state management using `Riverpod`, dynamic theming with persistent color selection and dark mode toggle, and enhanced navigation through a `NavigationDrawer`. It integrates `ProviderScope` for global state management, `ConsumerWidget` for reactive UI updates, and a modular routing system with `GoRouter`. The app showcases complex widget patterns including counters, theme changers, infinite scroll, animated containers, and onboarding tutorials, all styled with Material 3 design principles. This example highlights scalable architecture, reactive theming, and comprehensive navigation for modern Flutter applications.
 
@@ -391,7 +391,7 @@ The `Advanced Widgets App` is a Flutter application that demonstrates production
   </table>
 </div>
 
-### 11. Cinemapedia Introduction App
+### [11. Cinemapedia Introduction App](./11-cinemapedia-introduction/cinemapedia_introduction_app/)
 
 The `Cinemapedia Introduction App` is a Flutter project that demonstrates clean architecture principles with integration of the TMDb API. It applies `Riverpod` for state management, `GoRouter` for declarative navigation, and `flutter_dotenv` for secure environment configuration. The app separates concerns across domain, data, and presentation layers, using mappers to convert API models into domain entities. With `AppTheme` providing Material Design 3 styling, the application showcases a scalable structure, reactive UI updates, and robust pagination for movie listings.
 
@@ -415,6 +415,48 @@ The `Cinemapedia Introduction App` is a Flutter project that demonstrates clean 
           <li>Configured GoRouter for declarative navigation</li>
           <li>Applied Material Design 3 theming with AppTheme</li>
           <li>Ensured separation of concerns and scalability</li>
+        </ul>
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
+        Not available
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
+        Not available
+      </td>
+    </tr>
+  </table>
+</div>
+
+### [12. Cinemapedia Basic UI](./12-cinemapedia-basic-ui/cinemapedia_basic_ui/)
+
+The `Cinemapedia Basic UI` app is a Flutter project that demonstrates clean architecture with TMDb API integration, focusing on separation of concerns between domain, data, and presentation layers. It uses `Riverpod` for reactive state management, `GoRouter` for declarative navigation, and `flutter_dotenv` for secure environment configuration. The UI showcases Material Design 3 theming, custom app bars, bottom navigation, horizontal movie lists with pagination, and animated carousels powered by `card_swiper` and `animate_do`. This example highlights scalable architecture, reusable widgets, and smooth user experience for movie browsing.
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <th>Skills</th>
+      <th>Android App</th>
+      <th>iOS App</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Implemented clean architecture with domain, data, and presentation layers</li>
+          <li>Configured environment variables securely using flutter_dotenv</li>
+          <li>Defined abstract datasource and repository contracts</li>
+          <li>Integrated TMDb API with concrete datasource implementation</li>
+          <li>Mapped API models to domain entities with MovieMapper</li>
+          <li>Managed state reactively using Riverpod providers</li>
+          <li>Built HomeScreen with horizontal movie lists and pagination</li>
+          <li>Created MoviesSlideshow widget with card_swiper animations</li>
+          <li>Developed reusable MoviesHorizontalListView component</li>
+          <li>Added CustomAppBar and CustomBottomNavigation for consistent UI</li>
+          <li>Implemented FullScreenLoader for initial data fetching</li>
+          <li>Configured GoRouter for declarative navigation</li>
+          <li>Applied Material Design 3 theming with AppTheme</li>
+          <li>Enhanced UX with animate_do transitions and carousel effects</li>
         </ul>
       </td>
       <td align="center">

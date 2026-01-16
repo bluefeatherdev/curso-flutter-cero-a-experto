@@ -4,11 +4,9 @@
 ![Static Badge](https://img.shields.io/badge/language-dart-0175C2?style=for-the-badge&logo=dart&logoColor=white&labelColor=101010) 
 ![Static Badge](https://img.shields.io/badge/Scripting-bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=101010)
 
-> This repository is a personal learning log where I document and share my progress through the Udemy course
->
-> [Flutter - Móvil: De cero a experto (2023 Edition)](https://www.udemy.com/course/flutter-cero-a-experto/)
+> Personal learning log where I document and share my progress through this Udemy course:
 
-> This repository is licensed under the terms of the [Apache License 2.0](LICENSE). 
+> [Flutter - Móvil: De cero a experto (2023 Edition)](https://www.udemy.com/course/flutter-cero-a-experto/)
 
 ## My Learning Path
 
@@ -470,5 +468,49 @@ The `Cinemapedia Basic UI` app is a Flutter project that demonstrates clean arch
     </tr>
   </table>
 </div>
+
+### [13. Cinemapedia Movie Info](./13-cinemapedia-movie-info/cinemapedia_movie_info/)
+
+The `Cinemapedia Movie Info` app is a Flutter project that extends clean architecture principles with TMDb API integration to deliver comprehensive movie details. It uses `Riverpod` for state management, `GoRouter` for navigation, and `flutter_dotenv` for secure environment configuration. The architecture separates domain, data, and presentation layers, with mappers converting API models into domain entities for movies and actors. The UI showcases Material Design 3 theming, horizontal movie lists with pagination, slideshow carousels, and detailed movie screens including cast information, ratings, and metadata. This example highlights scalable architecture, reactive state updates, and advanced filtering for rich movie browsing experiences.
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <th>Skills</th>
+      <th>Android App</th>
+      <th>iOS App</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Implemented clean architecture with domain, data, and presentation layers</li>
+          <li>Configured environment variables securely using flutter_dotenv</li>
+          <li>Defined abstract datasources and repositories for movies and actors</li>
+          <li>Integrated TMDb API with concrete datasource implementations</li>
+          <li>Mapped API models to domain entities with MovieMapper and ActorMapper</li>
+          <li>Managed state reactively using Riverpod providers</li>
+          <li>Built HomeScreen with horizontal movie lists and slideshow carousel</li>
+          <li>Created MovieScreen for detailed movie information and cast display</li>
+          <li>Implemented pagination with StateNotifier pattern</li>
+          <li>Applied Material Design 3 theming with AppTheme</li>
+          <li>Developed reusable widgets: MoviesSlideshow, MoviesHorizontalListView, CustomAppBar, CustomBottomNavigation</li>
+          <li>Handled full-screen loading states with FullScreenLoader</li>
+          <li>Enabled advanced filtering and actor details integration</li>
+          <li>Ensured separation of concerns and scalability</li>
+        </ul>
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
+        Not available
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
+        Not available
+      </td>
+    </tr>
+  </table>
+</div>
+
+> This repository is licensed under the terms of the [Apache License 2.0](LICENSE). 
 
 > Made with '\u{2665}' (♥) by Jesús Domínguez [@bluefeatherdev](https://github.com/bluefeatherdev)

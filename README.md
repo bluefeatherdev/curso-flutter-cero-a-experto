@@ -511,6 +511,48 @@ The `Cinemapedia Movie Info` app is a Flutter project that extends clean archite
   </table>
 </div>
 
+### [14. Cinemapedia Search Movies](./14-cinemapedia-search-movies/cinemapedia_search_movies/)
+
+The `Cinemapedia Search Movies` app is a Flutter project that extends clean architecture principles with TMDb API integration, adding full-text search functionality. It uses `Riverpod` for state management, `GoRouter` for navigation, and `flutter_dotenv` for secure environment configuration. The architecture separates domain, data, and presentation layers, with mappers converting API models into domain entities for movies and actors. The UI showcases Material Design 3 theming, horizontal movie lists with pagination, slideshow carousels, and a custom `SearchMoviesDelegate` for query-based filtering. This example highlights scalable architecture, reactive search state updates, and rich movie browsing with actor information.
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <th>Skills</th>
+      <th>Android App</th>
+      <th>iOS App</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Implemented clean architecture with domain, data, and presentation layers</li>
+          <li>Configured environment variables securely using flutter_dotenv</li>
+          <li>Defined abstract datasources and repositories for movies and actors</li>
+          <li>Integrated TMDb API with concrete datasource implementations</li>
+          <li>Mapped API models to domain entities with MovieMapper and ActorMapper</li>
+          <li>Managed state reactively using Riverpod providers</li>
+          <li>Built HomeScreen with horizontal movie lists, slideshow carousel, and search integration</li>
+          <li>Created MovieScreen for detailed movie information and cast display</li>
+          <li>Implemented SearchMoviesDelegate with query history and debouncing</li>
+          <li>Developed search_movies_provider for reactive query state and results</li>
+          <li>Applied Material Design 3 theming with AppTheme</li>
+          <li>Configured GoRouter for declarative navigation</li>
+          <li>Enhanced UX with animate_do transitions and card_swiper carousel effects</li>
+          <li>Ensured separation of concerns and scalability</li>
+        </ul>
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
+        Not available
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
+        Not available
+      </td>
+    </tr>
+  </table>
+</div>
+
 > This repository is licensed under the terms of the [Apache License 2.0](LICENSE). 
 
-> Made with '\u{2665}' (♥) by Jesús Domínguez [@bluefeatherdev](https://github.com/bluefeatherdev)
+> Made with '\u{2665}' (♥) by Jesús Domínguez [@jdomingu19](https://github.com/jdomingu19)

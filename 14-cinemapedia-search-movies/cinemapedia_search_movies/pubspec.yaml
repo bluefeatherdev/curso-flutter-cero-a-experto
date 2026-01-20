@@ -1,8 +1,11 @@
 name: cinemapedia_search_movies
 description: >
-  A Flutter application demonstrating clean architecture with The Movie Database (TMDb) API integration. 
-  Features Riverpod state management, GoRouter navigation, Material Design 3 theming, 
-  and comprehensive movie information display including actor details and advanced filtering capabilities.
+  A Flutter application demonstrating clean architecture with The Movie Database (TMDb) API integration.
+  Features Riverpod state management, GoRouter navigation, Material Design 3 theming, movie search functionality,
+  actor information display, pagination support, and comprehensive separation of concerns between domain, data,
+  and presentation layers. Includes custom search delegate, dynamic theme switching, horizontal lists with
+  animations, carousel slideshow effects, and detailed movie information screens with cast details.
+publish_to: none
 version: 0.1.0
 
 environment:

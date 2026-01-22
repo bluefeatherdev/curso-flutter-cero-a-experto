@@ -1,6 +1,10 @@
 name: cinemapedia_tabs
 description: >
-  ?
+  A Flutter application demonstrating clean architecture principles with The Movie Database (TMDb) 
+  API integration. Showcases Riverpod state management, GoRouter navigation, Material Design 3 
+  theming, movie search functionality, actor information display, and comprehensive separation of 
+  concerns between domain, data, and presentation layers. Features include paginated movie lists, 
+  search with debouncing, detailed movie views with cast information, and smooth animations.
 publish_to: none
 version: 0.1.0
 

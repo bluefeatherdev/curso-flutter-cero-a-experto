@@ -8,7 +8,7 @@ A Flutter application demonstrating clean architecture principles with The Movie
 The project follows clean architecture pattern with clear separation between core business logic, data access, and user interface:
 
 
-- `lib/main.dart` - Application entry point configuring `MaterialApp.router` with `ProviderScope` for Riverpod and environment variable loading via `flutter_dotenv`
+### Core Layer
 
 - `lib/core/constants/environment.dart` - Environment configuration file containing API keys and endpoints loaded from `.env` file
 
@@ -48,6 +48,11 @@ The project follows clean architecture pattern with clear separation between cor
 
 - `lib/core/helpers/human_formats.dart` - Utility helper functions for formatting human-readable data like currency, dates, and numbers
 
+
+### UI Layer
+
+- `lib/main.dart` - Application entry point configuring `MaterialApp.router` with `ProviderScope` for Riverpod and environment variable loading via `flutter_dotenv`
+
 - `lib/ui/theme/app_theme.dart` - Theme configuration class implementing Material Design 3 system with color schemes and typography
 
 - `lib/ui/delegates/search_movies_delegate.dart` - Custom search delegate implementing search functionality with query history and movie suggestions
@@ -75,6 +80,14 @@ The project follows clean architecture pattern with clear separation between cor
 - `lib/ui/screens/movies/home_screen.dart` - Main screen displaying paginated movies in horizontal lists with loading states, error handling, and search functionality
 
 - `lib/ui/screens/movies/movie_screen.dart` - Detailed movie view screen displaying full movie information including cast, rating, overview, and navigation
+
+- `lib/ui/views/views.dart` - Barrel file exporting view widgets for modular composition
+
+- `lib/ui/views/home_views/home_view.dart` - Home view component rendering main content with tabbed navigation and movie lists
+
+- `lib/ui/views/home_views/favorites_view.dart` - Favorites view component for displaying user favorited movies
+
+- `lib/ui/widgets/widgets.dart` - Barrel file exporting all widget components for centralized imports
 
 - `lib/ui/widgets/movies/movies_slideshow.dart` - Widget component rendering carousel slideshow with animated movie cards using `card_swiper` package
 
@@ -140,4 +153,4 @@ Movie screen renders complete information including title, overview, rating, cas
 
 Theme configuration from `app_theme` applies Material 3 styling consistently across all screens, navigation, and components throughout user interaction flows.
 
-> Made with '\u{2665}' (♥) by Jesús Domínguez [@jdomingu19](https://github.com/jdomingu19)
+> Made with '\u{2665}' (♥) by Jesús Domínguez [@jdomingu19](https://github.com/jdomingu19/)

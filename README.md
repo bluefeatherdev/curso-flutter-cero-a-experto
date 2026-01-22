@@ -553,6 +553,48 @@ The `Cinemapedia Search Movies` app is a Flutter project that extends clean arch
   </table>
 </div>
 
+### [15. Cinemapedia Tabs](./15-cinemapedia-tabs/cinemapedia_tabs/)
+
+The `Cinemapedia Tabs` app is a Flutter project that extends clean architecture principles with TMDb API integration, adding tabbed navigation and favorites management. It uses `Riverpod` for state management, `GoRouter` for navigation, and `flutter_dotenv` for secure environment configuration. The architecture separates domain, data, and presentation layers, with mappers converting API models into domain entities for movies and actors. The UI showcases Material Design 3 theming, horizontal movie lists with pagination, slideshow carousels, search functionality, and tabbed views for home and favorites. This example highlights scalable architecture, reactive state updates, and modular UI composition for a richer movie browsing experience.
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <th>Skills</th>
+      <th>Android App</th>
+      <th>iOS App</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Implemented clean architecture with domain, data, and presentation layers</li>
+          <li>Configured environment variables securely using flutter_dotenv</li>
+          <li>Defined abstract datasources and repositories for movies and actors</li>
+          <li>Integrated TMDb API with concrete datasource implementations</li>
+          <li>Mapped API models to domain entities with MovieMapper and ActorMapper</li>
+          <li>Managed state reactively using Riverpod providers</li>
+          <li>Built HomeScreen with tabbed navigation and search integration</li>
+          <li>Created HomeView and FavoritesView for modular UI composition</li>
+          <li>Developed MovieScreen for detailed movie information and cast display</li>
+          <li>Implemented SearchMoviesDelegate with query history and suggestions</li>
+          <li>Applied Material Design 3 theming with AppTheme</li>
+          <li>Configured GoRouter for declarative navigation</li>
+          <li>Enhanced UX with animate_do transitions and card_swiper carousel effects</li>
+          <li>Ensured separation of concerns and scalability</li>
+        </ul>
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
+        Not available
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
+        Not available
+      </td>
+    </tr>
+  </table>
+</div>
+
 > This repository is licensed under the terms of the [Apache License 2.0](LICENSE). 
 
 > Made with '\u{2665}' (♥) by Jesús Domínguez [@jdomingu19](https://github.com/jdomingu19)

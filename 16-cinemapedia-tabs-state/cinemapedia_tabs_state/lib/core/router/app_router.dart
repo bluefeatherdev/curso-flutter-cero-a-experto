@@ -1,58 +1,28 @@
 // Cinemapedia Tabs State
 import 'package:go_router/go_router.dart';
 import 'package:cinemapedia_tabs_state/ui/screens/screens.dart';
-import 'package:cinemapedia_tabs_state/ui/views/views.dart';
 
-final appRouter = GoRouter(
-  initialLocation: '/',
+final GoRouter appRouter = GoRouter(
+  initialLocation: '/home/0',
   routes: <RouteBase>[
-    ShellRoute(
-      builder: (context, state, child) {
-        return HomeScreen(childView: child);
+    GoRoute(
+      path: '/home/:page',
+      name: HomeScreen.name,
+      builder: (context, state) {
+        final int pageIndex = int.parse(state.pathParameters['page'] ?? '0');
+        return HomeScreen(pageIndex: pageIndex);
       },
       routes: <RouteBase>[
         GoRoute(
-          path: '/',
+          path: 'movie/:id',
+          name: MovieScreen.name,
           builder: (context, state) {
-            return const HomeView();
-          },
-          routes: <RouteBase>[
-            GoRoute(
-              path: 'movie/:id',
-              name: MovieScreen.name,
-              builder: (context, state) {
-                final movieId = state.pathParameters['id'] ?? 'no-id';
-                return MovieScreen(movieId: movieId);
-              },
-            ),
-          ],
-        ),
-        GoRoute(
-          path: '/favorites',
-          builder: (context, state) {
-            return const FavoritesView();
+            final String movieId = state.pathParameters['id'] ?? 'no-id';
+            return MovieScreen(movieId: movieId);
           },
         ),
       ],
     ),
-
-    /// Parent-child routes:
-    /// ```dart
-    /// GoRoute(
-    ///   path: '/',
-    ///   name: HomeScreen.name,
-    ///   builder: (context, state) => const HomeScreen(childView: HomeView()),
-    ///   routes: <RouteBase>[
-    ///     GoRoute(
-    ///       path: 'movie/:id',
-    ///       name: MovieScreen.name,
-    ///       builder: (context, state) {
-    ///         final movieId = state.pathParameters['id'] ?? 'no-id';
-    ///         return MovieScreen(movieId: movieId);
-    ///       },
-    ///     ),
-    ///   ],
-    /// ),
-    /// ```
+    GoRoute(path: '/', redirect: (_, _) => '/home/0'),
   ],
 );

@@ -2,155 +2,114 @@
 
 A Flutter application demonstrating clean architecture principles with The Movie Database (TMDb) API integration. This example showcases Riverpod state management, GoRouter navigation, Material Design 3 theming, movie search functionality, actor information display, and comprehensive separation of concerns between domain, data, and presentation layers.
 
-
 ## Structure
 
-The project follows clean architecture pattern with clear separation between core business logic, data access, and user interface:
-
+The project follows clean architecture pattern with clear separation between core business logic, data access, and user interface.
 
 ### Core Layer
 
-- `lib/core/constants/environment.dart` - Environment configuration file containing API keys and endpoints loaded from `.env` file
+**Constants**
 
-- `lib/core/router/app_router.dart` - Centralized routing configuration using `go_router` package with declarative route definitions and navigation paths for home and movie detail screens
+The `core/constants/` directory contains environment configuration files that manage API keys and endpoints loaded from `.env` file.
 
-- `lib/core/domain/datasources/movies_datasource.dart` - Abstract datasource interface defining contract for movie data retrieval operations including search functionality
+**Router**
 
-- `lib/core/domain/datasources/actors_datasource.dart` - Abstract datasource interface defining contract for actor data retrieval operations by movie identifier
+The `core/router/app_router.dart` file provides centralized routing configuration using `go_router` package with declarative route definitions and navigation paths for home and movie detail screens.
 
-- `lib/core/domain/entities/movie_entity.dart` - Domain entity representing core movie data model independent of external API schemas
+**Domain**
 
-- `lib/core/domain/entities/actor_entity.dart` - Domain entity representing actor information independent of TMDb API structure
+Domain layer defines the core business logic contracts independent of external frameworks:
 
-- `lib/core/domain/repositories/movies_repository.dart` - Abstract repository interface defining business logic contracts for movie operations and search
+- `core/domain/datasources/` contains abstract interfaces defining contracts for movie and actor data retrieval operations
+- `core/domain/entities/` provides domain models representing core movie and actor data independent of external API schemas
+- `core/domain/repositories/` defines abstract repository interfaces for data access operations
 
-- `lib/core/domain/repositories/actors_repository.dart` - Abstract repository interface defining business logic contracts for actor data access
+**Data**
 
-- `lib/core/data/datasources/moviedb_datasource.dart` - Concrete datasource implementation handling TMDb API communication for movies, pagination, and search queries
+Data layer implements the domain contracts and handles external data sources:
 
-- `lib/core/data/datasources/actors_moviedb_datasource.dart` - Concrete datasource implementation handling TMDb API communication for actor credits and cast information
+- `core/data/datasources/` implements abstract datasources with TheMovieDb API integration using `dio` HTTP client
+- `core/data/mappers/` transforms API response models into domain entities
+- `core/data/models/moviedb/` defines data transfer objects matching TheMovieDb API response structure
+- `core/data/repositories/` implements domain repository interfaces
 
-- `lib/core/data/models/moviedb/moviedb_response.dart` - Data model representing TMDb API response structure for movies with JSON serialization
+**Helpers**
 
-- `lib/core/data/models/moviedb/movie_moviedb.dart` - Data model representing individual movie objects from TMDb API with field mapping and serialization
-
-- `lib/core/data/models/moviedb/movie_details.dart` - Data model representing detailed movie information including revenue, budget, and runtime from TMDb API
-
-- `lib/core/data/models/moviedb/credits_response.dart` - Data model representing cast and credits response from TMDb API with actor information
-
-- `lib/core/data/mappers/movie_mapper.dart` - Mapper class converting `movie_moviedb` and `movie_details` data models to `movie_entity` domain entities
-
-- `lib/core/data/mappers/actor_mapper.dart` - Mapper class converting TMDb cast data to `actor_entity` domain entities for presentation
-
-- `lib/core/data/repositories/movie_repository_implementation.dart` - Concrete repository implementation orchestrating datasource calls, entity mapping, and business logic for movies
-
-- `lib/core/data/repositories/actors_repository_implementation.dart` - Concrete repository implementation handling actor data retrieval and entity conversion
-
-- `lib/core/helpers/human_formats.dart` - Utility helper functions for formatting human-readable data like currency, dates, and numbers
-
+The `core/helpers/` directory provides utility functions for formatting and transforming data, such as human-readable number and date formatting.
 
 ### UI Layer
 
-- `lib/main.dart` - Application entry point configuring `MaterialApp.router` with `ProviderScope` for Riverpod and environment variable loading via `flutter_dotenv`
+**Providers**
 
-- `lib/ui/theme/app_theme.dart` - Theme configuration class implementing Material Design 3 system with color schemes and typography
+State management using Riverpod manages application state across multiple concerns:
 
-- `lib/ui/delegates/search_movies_delegate.dart` - Custom search delegate implementing search functionality with query history and movie suggestions
+- `ui/providers/movies/` contains providers for now playing, popular, top rated, and upcoming movies with pagination support
+- `ui/providers/actors/` manages actor data retrieval and caching by movie identifier
+- `ui/providers/search/` handles movie search functionality with query management
 
-- `lib/ui/providers/providers.dart` - Barrel file exporting all Riverpod providers for centralized state management access
+**Screens**
 
-- `lib/ui/providers/movies/movies_repository_provider.dart` - Riverpod provider exposing `MoviesRepository` instance for dependency injection
+Screen definitions provide the main navigation structure:
 
-- `lib/ui/providers/movies/movies_provider.dart` - Riverpod state provider managing movies list state and handling API data fetching with pagination
+- `ui/screens/movies/home_screen.dart` presents the main application interface with bottom navigation
+- `ui/screens/movies/movie_screen.dart` displays detailed movie information with cast
 
-- `lib/ui/providers/movies/movies_slideshow_provider.dart` - Provider computing filtered movie subset for carousel slideshow display
+**Views**
 
-- `lib/ui/providers/movies/movies_info_provider.dart` - Provider fetching detailed movie information from datasource for individual movie screens
+View components represent specific content sections:
 
-- `lib/ui/providers/movies/initial_loading_provider.dart` - Provider managing initial application loading state during startup
+- `ui/views/movies/home_view.dart` displays now playing, popular, top rated, and upcoming movie lists
+- `ui/views/movies/favorites_view.dart` shows user favorite movies
 
-- `lib/ui/providers/actors/actors_repository_provider.dart` - Riverpod provider exposing `ActorsRepository` instance for actor data access
+**Widgets**
 
-- `lib/ui/providers/actors/actors_by_movie_provider.dart` - Provider fetching and caching actor credits for specific movies
+Reusable widget components build the user interface:
 
-- `lib/ui/providers/search/search_movies_provider.dart` - StateNotifier provider managing search functionality with query state and search results
+- `ui/widgets/movies/` contains movie-specific widgets like horizontal movie lists and slideshows
+- `ui/widgets/shared/` provides application-wide shared widgets including custom app bar, bottom navigation, and loading indicators
 
-- `lib/ui/screens/screens.dart` - Barrel file exporting all screen widgets for simplified imports across the application
+**Theme**
 
-- `lib/ui/screens/movies/home_screen.dart` - Main screen displaying paginated movies in horizontal lists with loading states, error handling, and search functionality
+The `ui/theme/app_theme.dart` file configures Material Design 3 theming with consistent color schemes and typography.
 
-- `lib/ui/screens/movies/movie_screen.dart` - Detailed movie view screen displaying full movie information including cast, rating, overview, and navigation
+**Delegates**
 
-- `lib/ui/views/views.dart` - Barrel file exporting view widgets for modular composition
-
-- `lib/ui/views/home_views/home_view.dart` - Home view component rendering main content with tabbed navigation and movie lists
-
-- `lib/ui/views/home_views/favorites_view.dart` - Favorites view component for displaying user favorited movies
-
-- `lib/ui/widgets/widgets.dart` - Barrel file exporting all widget components for centralized imports
-
-- `lib/ui/widgets/movies/movies_slideshow.dart` - Widget component rendering carousel slideshow with animated movie cards using `card_swiper` package
-
-- `lib/ui/widgets/movies/movies_horizontal_listview.dart` - Reusable widget displaying horizontal scrollable list of movies with pagination support and item callbacks
-
-- `lib/ui/widgets/shared/custom_appbar.dart` - Custom application bar widget providing consistent header styling with search integration across screens
-
-- `lib/ui/widgets/shared/custom_bottom_navigation.dart` - Custom bottom navigation widget enabling screen transitions and route navigation
-
-- `lib/ui/widgets/shared/full_screen_loader.dart` - Full-screen loading indicator displayed during initial data fetching operations
-
+The `ui/delegates/search_movies_delegate.dart` implements search delegate for the app bar search functionality.
 
 ## Key Points
 
-The application implements clean architecture with complete separation between domain layer (business logic), data layer (API communication), and presentation layer (UI). The `movies_datasource` and `actors_datasource` abstract classes define contracts for data retrieval, while concrete implementations provide TMDb API integration using HTTP client operations through `dio` package.
+This project demonstrates several important Flutter development patterns:
 
-Entity mapping occurs in `movie_mapper` and `actor_mapper` classes converting TMDb-specific data models into domain-agnostic entity objects. This decoupling enables robust architecture that remains resilient to external API schema changes.
+- **Clean Architecture** separates domain, data, and presentation layers with clear dependency flows
 
-Riverpod state management handles reactive UI updates through `movies_repository_provider` and `actors_repository_provider` exposing repository instances, plus `movies_provider` and `actors_by_movie_provider` managing application state. The `ProviderScope` widget at application root enables provider access throughout the widget tree without explicit passing.
+- **Riverpod State Management** provides efficient reactive state handling with StateNotifierProvider for complex state logic
 
-Search functionality implements custom `SearchMoviesDelegate` enabling query-based movie filtering with debouncing and caching. The `search_movies_provider` manages search state and results reactively.
+- **Repository Pattern** abstracts data source implementations allowing flexible switching between different backends
 
-Environment configuration uses `flutter_dotenv` loading `.env` file at startup, storing sensitive API keys and endpoints outside version control. The `environment.dart` constants file accesses these values for datasource initialization.
+- **Mapper Pattern** transforms data between API models and domain entities maintaining separation of concerns
 
-GoRouter enables declarative navigation with type-safe route definitions including home screen and movie detail screen transitions. Named routes and path-based parameters provide flexible routing matching different user interaction patterns.
+- **GoRouter Navigation** enables declarative type-safe routing with deep linking support
 
-Material Design 3 theming via `AppTheme` class provides consistent visual styling across all screens with color schemes, typography, and component configuration.
+- **Material Design 3** implements modern theming with dynamic color schemes
 
-Pagination uses `StateNotifier` pattern tracking current page and loading state, automatically appending new results without resetting UI state when users scroll to list bottom.
-
-Animation libraries including `animate_do` and `card_swiper` enhance user experience with smooth transitions, fade-ins, slide animations, and carousel effects for movie displays.
-
-Human format utilities convert API data (currency, dates, numbers) into user-friendly readable formats across all screens.
-
+- **API Integration** demonstrates Dio HTTP client configuration with environment-based API keys
 
 ## Example Workflow
 
-Launch the application triggering `main()` to load environment variables from `.env` file and initialize `ProviderScope` with Riverpod configuration.
+The application follows this workflow when displaying movies:
 
-The `home_screen` renders initializing `movies_provider` which triggers `moviedb_datasource` to fetch initial movies batch from TMDb API.
-
-`moviedb_datasource` executes HTTP GET request to TMDb endpoint using API key from environment configuration and response mapping.
-
-Response JSON maps to `moviedb_response` data model, then mapper converts individual `movie_moviedb` objects to `movie_entity` domain entities.
-
-`movies_provider` state updates with fetched entity list triggering `home_screen` rebuild displaying movies in animated carousel and horizontal scrollable lists.
-
-User scrolls to list bottom triggering pagination logic fetching next movies batch through identical datasource-mapper-entity flow.
-
-User initiates search by tapping search icon opening `SearchMoviesDelegate` with query input field.
-
-Search queries invoke `search_movies_provider` triggering `moviedb_datasource` search endpoint with user query string.
-
-Search results display in delegate UI with option selection navigating to movie detail screen.
-
-User selects movie navigating to `movie_screen` via GoRouter route passing movie identifier as parameter.
-
-`movie_screen` initializes `movies_info_provider` fetching detailed movie data and `actors_by_movie_provider` fetching cast information.
-
-`actors_moviedb_datasource` retrieves credits data from TMDb API converting to `actor_entity` objects via `actor_mapper`.
-
-Movie screen renders complete information including title, overview, rating, cast list, budget, revenue, and runtime with human formatting.
-
-Theme configuration from `app_theme` applies Material 3 styling consistently across all screens, navigation, and components throughout user interaction flows.
+1. User opens the application and navigates to the home screen
+  
+2. `HomeView` initializes providers loading movies from each category
+3. `MoviedbDatasource` fetches data from TheMovieDb API using environment API key
+4. API responses map to domain entities through `MovieMapper`
+5. `MoviesNotifier` manages pagination and state updates
+6. UI rebuilds displaying movie lists with `MoviesHorizontalListview` widgets
+7. User taps a movie card triggering navigation to `MovieScreen`
+8. `MovieScreen` loads detailed movie information and cast data
+9.  `MovieInfoProvider` caches loaded movies preventing duplicate API calls
+10. `ActorsByMovieProvider` fetches and displays cast information
+11. User searches movies triggering `SearchMoviesDelegate`
+12. Search results display in a Material search overlay
 
 > Made with '\u{2665}' (♥) by Jesús Domínguez [@jdomingu19](https://github.com/jdomingu19/)

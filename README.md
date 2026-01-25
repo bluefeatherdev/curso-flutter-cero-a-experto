@@ -595,6 +595,49 @@ The `Cinemapedia Tabs` app is a Flutter project that extends clean architecture 
   </table>
 </div>
 
+### [16. Cinemapedia Tabs State](./16-cinemapedia-tabs-state/cinemapedia_tabs_state/)
+
+The `Cinemapedia Tabs State` app is a Flutter project that extends clean architecture principles with TMDb API integration, focusing on advanced state management with Riverpod. It uses `StateNotifierProvider` for complex state logic, `GoRouter` for declarative navigation, and `flutter_dotenv` for secure environment configuration. The architecture separates domain, data, and presentation layers, with mappers converting API models into domain entities for movies and actors. The UI showcases Material Design 3 theming, tabbed navigation for home and favorites, horizontal movie lists with pagination, detailed movie screens with cast information, and integrated search functionality. This example highlights scalable architecture, efficient state handling, and modular UI composition.
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <th>Skills</th>
+      <th>Android App</th>
+      <th>iOS App</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Implemented clean architecture with domain, data, and presentation layers</li>
+          <li>Configured environment variables securely using flutter_dotenv</li>
+          <li>Defined abstract datasources and repositories for movies and actors</li>
+          <li>Integrated TMDb API with concrete datasource implementations</li>
+          <li>Mapped API models to domain entities with MovieMapper and ActorMapper</li>
+          <li>Managed state reactively using Riverpod with StateNotifierProvider</li>
+          <li>Built HomeScreen with bottom navigation and tabbed views</li>
+          <li>Created HomeView for categorized movie lists (now playing, popular, top rated, upcoming)</li>
+          <li>Developed FavoritesView for user favorited movies</li>
+          <li>Implemented MovieScreen for detailed movie information and cast display</li>
+          <li>Configured SearchMoviesDelegate for query-based movie search</li>
+          <li>Applied Material Design 3 theming with AppTheme</li>
+          <li>Configured GoRouter for declarative navigation with deep linking support</li>
+          <li>Enhanced UX with reusable widgets: MoviesHorizontalListview, MoviesSlideshow, CustomAppBar, CustomBottomNavigation</li>
+          <li>Ensured separation of concerns, scalability, and efficient state caching</li>
+        </ul>
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_ANDROID" width="250" alt="android_alt_here" /> -->
+        Not available
+      </td>
+      <td align="center">
+        <!-- <img src="URL_IMAGEN_IOS" width="250" alt="ios_alt_here" /> -->
+        Not available
+      </td>
+    </tr>
+  </table>
+</div>
+
 > This repository is licensed under the terms of the [Apache License 2.0](LICENSE). 
 
 > Made with '\u{2665}' (♥) by Jesús Domínguez [@jdomingu19](https://github.com/jdomingu19)

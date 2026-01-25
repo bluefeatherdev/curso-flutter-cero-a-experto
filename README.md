@@ -6,6 +6,8 @@
 
 > Personal learning log where I document and share my progress through this Udemy course:
 
+![header_udemy_flutter](https://github.com/user-attachments/assets/467511b8-ec37-4bf0-a775-82585dbc6149)
+
 > [Flutter - Móvil: De cero a experto (2023 Edition)](https://www.udemy.com/course/flutter-cero-a-experto/)
 
 ## My Learning Path

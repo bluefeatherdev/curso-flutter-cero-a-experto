@@ -8,6 +8,9 @@ import 'package:cinemapedia_local_database/ui/theme/app_theme.dart';
 import 'package:cinemapedia_local_database/core/router/app_router.dart';
 
 Future<void> main() async {
+  // Testing Drift Database
+  WidgetsFlutterBinding.ensureInitialized();
+
   await dotenv.load(fileName: '.env');
 
   runApp(const ProviderScope(child: MainApp()));
